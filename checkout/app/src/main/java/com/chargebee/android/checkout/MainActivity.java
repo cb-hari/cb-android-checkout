@@ -8,12 +8,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.chargebee.android.lib.Environment;
+import com.chargebee.Environment;
+import com.chargebee.checkout.Chargebee;
+import com.chargebee.checkout.Chargebee.OptionsBuilder;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import sdk.Chargebee;
-import sdk.Chargebee.OptionsBuilder;
 
 public class MainActivity extends AppCompatActivity {
 

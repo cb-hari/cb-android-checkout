@@ -14,14 +14,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chargebee.android.lib.Result;
-import com.chargebee.android.lib.models.HostedPage;
-
-import butterknife.InjectView;
-import sdk.Chargebee;
-import sdk.Chargebee.CheckoutCallbacksBuilder;
-import sdk.OnCloseCheckoutCallback;
-import sdk.OnSuccessCheckoutCallback;
+import com.chargebee.Result;
+import com.chargebee.checkout.Chargebee;
+import com.chargebee.checkout.Chargebee.CheckoutCallbacksBuilder;
+import com.chargebee.checkout.OnCloseCheckoutCallback;
+import com.chargebee.checkout.OnSuccessCheckoutCallback;
+import com.chargebee.models.HostedPage;
 
 /**
  * Created by cb-hariprasath on 18/11/17.
@@ -41,28 +39,28 @@ public class UpgradeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upgrade);
         trial = (TextView) findViewById(R.id.trial_text);
-        oneMonth = (Button)findViewById(R.id.one_month);
-        threeMonth = (Button)findViewById(R.id.three_month);
-        sixMonth = (Button)findViewById(R.id.six_month);
+        oneMonth = (Button) findViewById(R.id.one_month);
+        threeMonth = (Button) findViewById(R.id.three_month);
+        sixMonth = (Button) findViewById(R.id.six_month);
         trial.setText(Html.fromHtml("<h1>You are currently in trial plan</h1>"));
         oneMonth.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CheckoutReq(UpgradeActivity.this,"1-month").execute();
+                new CheckoutReq(UpgradeActivity.this, "1-month").execute();
                 WynkData.paidDisp = "<h1>1 Month Subscription Successful.</h1>";
             }
         });
         threeMonth.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CheckoutReq(UpgradeActivity.this,"3-months").execute();
+                new CheckoutReq(UpgradeActivity.this, "3-months").execute();
                 WynkData.paidDisp = "<h1>3 Months Subscription Successful.</h1>";
             }
         });
         sixMonth.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CheckoutReq(UpgradeActivity.this,"6-months").execute();
+                new CheckoutReq(UpgradeActivity.this, "6-months").execute();
                 WynkData.paidDisp = "<h1>6 Months Subscription Successful.</h1>";
             }
         });

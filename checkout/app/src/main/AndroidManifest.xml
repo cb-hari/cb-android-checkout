@@ -23,7 +23,7 @@
         <activity android:name=".UpgradeActivity">
 
         </activity>
-        <activity android:name="sdk.ChargebeeWebViewActivity"/>
+        <activity android:name="com.chargebee.checkout.ChargebeeWebViewActivity"/>
         <activity
             android:name=".TrialSubscriptionActivity"
             android:label="@string/title_activity_trial_subscription"

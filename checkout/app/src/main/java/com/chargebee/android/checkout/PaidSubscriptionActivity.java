@@ -15,11 +15,11 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chargebee.android.lib.Result;
-import com.chargebee.android.lib.models.PortalSession;
+import com.chargebee.Result;
+import com.chargebee.checkout.Chargebee;
+import com.chargebee.checkout.Chargebee.PortalCallbacksBuilder;
+import com.chargebee.models.PortalSession;
 
-import sdk.Chargebee;
-import sdk.Chargebee.PortalCallbacksBuilder;
 
 public class PaidSubscriptionActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

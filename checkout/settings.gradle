@@ -1,1 +1,1 @@
-include ':app', ':cb-lib'
+include ':app', ':chargebee-library'

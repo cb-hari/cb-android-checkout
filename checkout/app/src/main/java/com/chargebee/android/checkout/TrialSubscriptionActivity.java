@@ -18,18 +18,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.chargebee.android.lib.ListResult;
-import com.chargebee.android.lib.Result;
-import com.chargebee.android.lib.filters.enums.SortOrder;
-import com.chargebee.android.lib.models.Customer;
-import com.chargebee.android.lib.models.PortalSession;
-import com.chargebee.android.lib.models.Subscription;
-
-import butterknife.InjectView;
-import sdk.Chargebee;
-import sdk.Chargebee.PortalCallbacksBuilder;
 
 public class TrialSubscriptionActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

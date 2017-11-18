@@ -11,11 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.chargebee.android.lib.ListResult;
-import com.chargebee.android.lib.Result;
-import com.chargebee.android.lib.filters.enums.SortOrder;
-import com.chargebee.android.lib.models.PortalSession;
-import com.chargebee.android.lib.models.Subscription;
+import com.chargebee.ListResult;
+import com.chargebee.Result;
+import com.chargebee.filters.enums.SortOrder;
+import com.chargebee.models.PortalSession;
+import com.chargebee.models.Subscription;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

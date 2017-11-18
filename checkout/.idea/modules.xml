@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cb-lib/cb-lib.iml" filepath="$PROJECT_DIR$/cb-lib/cb-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chargebee-library/chargebee-library.iml" filepath="$PROJECT_DIR$/chargebee-library/chargebee-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/checkout.iml" filepath="$PROJECT_DIR$/checkout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cb-lib/sdk.iml" filepath="$PROJECT_DIR$/cb-lib/sdk.iml" />
     </modules>
   </component>
 </project>
