@@ -110,11 +110,10 @@ public class UpgradeActivity extends AppCompatActivity {
     }
 
     private void openWebview(HostedPage hostedPage) {
-        Chargebee.getCbInstance().openCheckout(getApplicationContext(), hostedPage,
+        Chargebee.openCheckout(getApplicationContext(), hostedPage,
                 CheckoutCallbacksBuilder.b().setOnCloseCheckoutCallback(new OnCloseCheckoutCallback() {
                     @Override
                     public void onClose() {
-                        Log.d("hosted_page", "cb close event");
                         Intent intent = new Intent(getApplicationContext(), PaidSubscriptionActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         getApplicationContext().startActivity(intent);

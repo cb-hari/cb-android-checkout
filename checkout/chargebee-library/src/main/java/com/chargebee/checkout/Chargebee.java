@@ -1,5 +1,10 @@
 package com.chargebee.checkout;
 
+import android.content.Context;
+
+import com.chargebee.models.HostedPage;
+import com.chargebee.models.PortalSession;
+
 /**
  * Created by cb-hariprasath on 17/11/17.
  */
@@ -17,6 +22,14 @@ public class Chargebee {
 
     public static CbInstance init(Options options) {
         return getCbInstance().setOptions(options);
+    }
+
+    public static void openCheckout(Context context, HostedPage hostedPage, CheckoutCallbacks checkoutCallbacks) {
+        getCbInstance().openCheckout(context, hostedPage, checkoutCallbacks);
+    }
+
+    public static void openPortal(Context context, PortalSession portalSession, PortalCallbacks portalCallbacks) {
+        getCbInstance().openPortal(context, portalSession, portalCallbacks);
     }
 
     public static class Options {

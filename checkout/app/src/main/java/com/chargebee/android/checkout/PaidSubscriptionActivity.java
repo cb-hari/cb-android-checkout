@@ -110,7 +110,7 @@ public class PaidSubscriptionActivity extends AppCompatActivity
     }
 
     private void openWebview(final PortalSession portalSession) {
-        Chargebee.getCbInstance().openPortal(getApplicationContext(), portalSession,
+        Chargebee.openPortal(getApplicationContext(), portalSession,
                 PortalCallbacksBuilder.b());
     }
 }
